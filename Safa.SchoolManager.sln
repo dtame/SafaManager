@@ -5,8 +5,73 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{D6D35399-CF6D-4B2E-AAC7-C0FF0F2C8D1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safa.SchoolManager.Domain.Entities", "Safa.SchoolManager.Domain.Entities\Safa.SchoolManager.Domain.Entities.csproj", "{4A068CA4-3844-42F6-B498-397BE9350018}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{CE5E1D0B-3364-4D18-B3C7-DAFE32DB7682}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safa.SchoolManager.Infrastructure", "Safa.SchoolManager.Infrastructure\Safa.SchoolManager.Infrastructure.csproj", "{28166EDE-E7CE-4D36-AD44-2509138E0391}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{60C5A94D-2112-446E-8843-9166C3F01749}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{C535A0E4-2FCD-438C-920E-16BF26BCAB58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safa.SchoolManager.Web.FrontEnd", "Safa.SchoolManager.Web.FrontEnd\Safa.SchoolManager.Web.FrontEnd.csproj", "{E72F91E9-957B-4B90-A779-07DD08D5BEE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{6542B0E1-4630-423D-AB68-79626DFF7257}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safa.SchoolManager.DIMapper", "Safa.SchoolManager.DIMapper\Safa.SchoolManager.DIMapper.csproj", "{7337372A-3B32-436C-A8D5-3A03EA0CD113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safa.SchoolManager.Domain.RepositoryInterfaces", "Safa.SchoolManager.Domain.RepositoryInterfaces\Safa.SchoolManager.Domain.RepositoryInterfaces.csproj", "{15DD9746-ADCA-4A74-905A-A9EBFE41A47A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safa.SchoolManager.Services.ServicesInterfaces", "Safa.SchoolManager.Services.ServicesInterfaces\Safa.SchoolManager.Services.ServicesInterfaces.csproj", "{FCBDD2F6-AC7B-40DD-ADF6-FF785BB7DDC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safa.SchoolManager.Services.AppService", "Safa.SchoolManager.Services.AppService\Safa.SchoolManager.Services.AppService.csproj", "{41B9032B-562C-434F-A6AB-F0EA86E678D9}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A068CA4-3844-42F6-B498-397BE9350018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A068CA4-3844-42F6-B498-397BE9350018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A068CA4-3844-42F6-B498-397BE9350018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A068CA4-3844-42F6-B498-397BE9350018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28166EDE-E7CE-4D36-AD44-2509138E0391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28166EDE-E7CE-4D36-AD44-2509138E0391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28166EDE-E7CE-4D36-AD44-2509138E0391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28166EDE-E7CE-4D36-AD44-2509138E0391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E72F91E9-957B-4B90-A779-07DD08D5BEE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E72F91E9-957B-4B90-A779-07DD08D5BEE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E72F91E9-957B-4B90-A779-07DD08D5BEE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E72F91E9-957B-4B90-A779-07DD08D5BEE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7337372A-3B32-436C-A8D5-3A03EA0CD113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7337372A-3B32-436C-A8D5-3A03EA0CD113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7337372A-3B32-436C-A8D5-3A03EA0CD113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7337372A-3B32-436C-A8D5-3A03EA0CD113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15DD9746-ADCA-4A74-905A-A9EBFE41A47A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15DD9746-ADCA-4A74-905A-A9EBFE41A47A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15DD9746-ADCA-4A74-905A-A9EBFE41A47A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15DD9746-ADCA-4A74-905A-A9EBFE41A47A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCBDD2F6-AC7B-40DD-ADF6-FF785BB7DDC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCBDD2F6-AC7B-40DD-ADF6-FF785BB7DDC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCBDD2F6-AC7B-40DD-ADF6-FF785BB7DDC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCBDD2F6-AC7B-40DD-ADF6-FF785BB7DDC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41B9032B-562C-434F-A6AB-F0EA86E678D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41B9032B-562C-434F-A6AB-F0EA86E678D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41B9032B-562C-434F-A6AB-F0EA86E678D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41B9032B-562C-434F-A6AB-F0EA86E678D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4A068CA4-3844-42F6-B498-397BE9350018} = {D6D35399-CF6D-4B2E-AAC7-C0FF0F2C8D1C}
+		{28166EDE-E7CE-4D36-AD44-2509138E0391} = {CE5E1D0B-3364-4D18-B3C7-DAFE32DB7682}
+		{E72F91E9-957B-4B90-A779-07DD08D5BEE3} = {C535A0E4-2FCD-438C-920E-16BF26BCAB58}
+		{7337372A-3B32-436C-A8D5-3A03EA0CD113} = {6542B0E1-4630-423D-AB68-79626DFF7257}
+		{15DD9746-ADCA-4A74-905A-A9EBFE41A47A} = {D6D35399-CF6D-4B2E-AAC7-C0FF0F2C8D1C}
+		{FCBDD2F6-AC7B-40DD-ADF6-FF785BB7DDC8} = {60C5A94D-2112-446E-8843-9166C3F01749}
+		{41B9032B-562C-434F-A6AB-F0EA86E678D9} = {60C5A94D-2112-446E-8843-9166C3F01749}
 	EndGlobalSection
 EndGlobal
